@@ -19,7 +19,8 @@ from django.urls import path
 
 
 from personal.views import (
-    create_account_view,
+    login_view,
+    create_an_account_view
 )
 
 
@@ -27,5 +28,6 @@ from personal.views import (
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-path('', create_account_view),
+    path('', login_view),
+    path('create_an_account/', create_an_account_view)
 ]

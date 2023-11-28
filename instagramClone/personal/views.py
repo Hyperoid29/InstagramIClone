@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
 
-def create_account_view(request):
+def login_view(request):
     print(request.headers)
-    return render(request, "create_account.html", {})
+    return render(request, "login.html", {})
+
+def create_an_account_view(request):
+    print(request.headers)
+    return render(request, "create_an_account.html", {})
